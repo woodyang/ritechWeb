@@ -107,7 +107,7 @@
 <style scoped>
 	.join-box{
 		width: 70%;
-		margin: 70px auto 0;
+		margin: 100px auto 70px;
 		text-align: left;
 	}
 	p{
@@ -172,7 +172,7 @@
 		justify-content: space-between;
 	}
 	.join-footer{
-		padding: 0 75px 80px;
+		padding: 0 75px;
 	}
 	.connect-img{
 		width: 42px;

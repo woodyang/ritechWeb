@@ -52,7 +52,7 @@
 	.customer-box{
 		width: 70%;
 		height: auto;
-		margin: 0 auto;
+		margin: 130px auto 0;
 		text-align: left;
 	}
 	.customer-design,.custom-case,.nationwide-investment{

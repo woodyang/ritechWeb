@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="shoppingButton_hover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 102.8 30.6" style="enable-background:new 0 0 102.8 30.6;" xml:space="preserve">
+<style type="text/css">
+.borderStyle { fill: #3892BC; }
+.fontStyle { fill: #FFFFFF; font-family: 'Microsoft Yahei'; font-size: 13px; }
+</style>
+<path class="borderStyle" d="M100.2,30.6H2.5C1.1,30.6,0,29.4,0,28V2.5C0,1.1,1.1,0,2.5,0h97.7c1.4,0,2.5,1.1,2.5,2.5V28
+C102.8,29.4,101.6,30.6,100.2,30.6z" />
+<text transform="matrix(1 0 0 1 23.93 20.2723)" class="fontStyle">点击购买</text>
+</svg>

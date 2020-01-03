@@ -75,7 +75,8 @@
 <style scoped>
 	.profile{
 		width: 70%;
-		margin: 60px auto;
+		margin: 140px auto 0;
+		
 		color: #767271;
 		text-align: left;
 	}

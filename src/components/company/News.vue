@@ -1,5 +1,5 @@
 <template>
-	<div id="rcnews">
+	<div class="rcnews">
 		<div class="banner">
 			<h1>新闻资讯</h1>
 			<h2>News</h2>	
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-	import newsDetail from '@/components/news/NewsDetailComponents'
+	import newsDetail from '@/components/company/NewsDetailComponents'
 	import axios from 'axios'
 	export default {
 	  	data () {
@@ -95,7 +95,6 @@
 	  	},
 	  	created(){ // 加载页面，获取
 	  		this.getPartNews('c').then(res=>{
-	  			console.log(res)
 	  			this.newsList = res;
 	  		})
 	  	}
@@ -103,6 +102,9 @@
 </script>
 
 <style scoped>
+	.rcnews{
+		margin: 61px 0 30px;
+	}
 	.banner{
 		height: 290px;
 		color: white;

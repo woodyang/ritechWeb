@@ -37,37 +37,29 @@
 	  	},
 	  	methods:{
 	  		getProducts(productId){
-	  			return new Promise((resolve, reject) => {
-		  			axios.post('http://localhost:3000/products',{
-		  				productId:productId
-		  			})
-				    .then(response=>{
-				        if(response.data.code === 200){
-					        let responseData = response.data.data;
-					        this.productData = responseData;
-					        resolve(responseData)
-				        }
-				    })
-				    .catch(error=>{
-				        console.log(error);
-				        reject(error);
-				    })
-		  		})
+	  			axios.post('http://localhost:3000/products',{
+	  				productId:productId
+	  			})
+			    .then(response=>{
+			        if(response.data.code === 200){
+				        let responseData = response.data.data;
+				        this.productData = responseData;
+			        }
+			    })
+			    .catch(error=>{
+			        console.log(error);
+			    })
 	  		}
 	  	},
 	  	created(){
 	  		let productId = this.$route.query.id;
-	  		this.getProducts(productId).then(res=>{
-//		    		console.log(res)
-		    	})
+	  		this.getProducts(productId);
 		},
 		watch:{
 		  	$route: {
 			    handler: function(val, oldVal){
 			    	let productId = val.query.id;
-			    	this.getProducts(productId).then(res=>{
-//			    		console.log(res)
-			    	})
+			    	this.getProducts(productId)
 			    },
 			    // 深度观察监听
 			    deep: true
@@ -79,14 +71,14 @@
 <style scoped>
 	.container{
 		width: 80%;
-		margin-left: 10%;
+		margin: 61px auto 30px;
 		color: #767271;
 	}
 	.swiper-container{
 		height: 500px;
 	}
 	.el-image{
-		width: 80%;
+		width: 70%;
 		height: 100%;
 		margin: 0 auto;
 	}
